@@ -11,6 +11,10 @@
 		42D66F1B27BDC6C8006146BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D66F1A27BDC6C8006146BE /* ContentView.swift */; };
 		42D66F1D27BDC6CA006146BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D66F1C27BDC6CA006146BE /* Assets.xcassets */; };
 		42D66F2027BDC6CB006146BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D66F1F27BDC6CB006146BE /* Preview Assets.xcassets */; };
+		42D66F2A27BEB811006146BE /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D66F2927BEB811006146BE /* Loan.swift */; };
+		42D66F2C27BEDAC4006146BE /* LoanStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D66F2B27BEDAC4006146BE /* LoanStore.swift */; };
+		42D66F2E27BEF576006146BE /* LoanCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D66F2D27BEF576006146BE /* LoanCellView.swift */; };
+		42D66F3027BEF981006146BE /* LoanFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D66F2F27BEF980006146BE /* LoanFilterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		42D66F1A27BDC6C8006146BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		42D66F1C27BDC6CA006146BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42D66F1F27BDC6CB006146BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		42D66F2927BEB811006146BE /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
+		42D66F2B27BEDAC4006146BE /* LoanStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanStore.swift; sourceTree = "<group>"; };
+		42D66F2D27BEF576006146BE /* LoanCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCellView.swift; sourceTree = "<group>"; };
+		42D66F2F27BEF980006146BE /* LoanFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanFilterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		42D66F1727BDC6C8006146BE /* KivaAPI */ = {
 			isa = PBXGroup;
 			children = (
+				42D66F2727BEAB57006146BE /* View */,
+				42D66F2627BEAB52006146BE /* Model */,
 				42D66F1827BDC6C8006146BE /* KivaAPIApp.swift */,
-				42D66F1A27BDC6C8006146BE /* ContentView.swift */,
 				42D66F1C27BDC6CA006146BE /* Assets.xcassets */,
 				42D66F1E27BDC6CB006146BE /* Preview Content */,
 			);
@@ -65,6 +74,25 @@
 				42D66F1F27BDC6CB006146BE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		42D66F2627BEAB52006146BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42D66F2927BEB811006146BE /* Loan.swift */,
+				42D66F2B27BEDAC4006146BE /* LoanStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42D66F2727BEAB57006146BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42D66F1A27BDC6C8006146BE /* ContentView.swift */,
+				42D66F2D27BEF576006146BE /* LoanCellView.swift */,
+				42D66F2F27BEF980006146BE /* LoanFilterView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +166,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				42D66F1B27BDC6C8006146BE /* ContentView.swift in Sources */,
+				42D66F2C27BEDAC4006146BE /* LoanStore.swift in Sources */,
+				42D66F3027BEF981006146BE /* LoanFilterView.swift in Sources */,
+				42D66F2E27BEF576006146BE /* LoanCellView.swift in Sources */,
+				42D66F2A27BEB811006146BE /* Loan.swift in Sources */,
 				42D66F1927BDC6C8006146BE /* KivaAPIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
