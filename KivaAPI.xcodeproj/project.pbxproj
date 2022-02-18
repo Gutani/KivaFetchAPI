@@ -15,6 +15,7 @@
 		42D66F2C27BEDAC4006146BE /* LoanStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D66F2B27BEDAC4006146BE /* LoanStore.swift */; };
 		42D66F2E27BEF576006146BE /* LoanCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D66F2D27BEF576006146BE /* LoanCellView.swift */; };
 		42D66F3027BEF981006146BE /* LoanFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D66F2F27BEF980006146BE /* LoanFilterView.swift */; };
+		42D66F3327BFC225006146BE /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 42D66F3227BFC225006146BE /* BottomSheet */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D66F3327BFC225006146BE /* BottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +113,9 @@
 			dependencies = (
 			);
 			name = KivaAPI;
+			packageProductDependencies = (
+				42D66F3227BFC225006146BE /* BottomSheet */,
+			);
 			productName = KivaAPI;
 			productReference = 42D66F1527BDC6C8006146BE /* KivaAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -139,6 +144,9 @@
 				Base,
 			);
 			mainGroup = 42D66F0C27BDC6C8006146BE;
+			packageReferences = (
+				42D66F3127BFC225006146BE /* XCRemoteSwiftPackageReference "BottomSheet" */,
+			);
 			productRefGroup = 42D66F1627BDC6C8006146BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -373,6 +381,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42D66F3127BFC225006146BE /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LucasMucGH/BottomSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42D66F3227BFC225006146BE /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42D66F3127BFC225006146BE /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 42D66F0D27BDC6C8006146BE /* Project object */;
 }
